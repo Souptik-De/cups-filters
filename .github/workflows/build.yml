@@ -21,7 +21,7 @@ jobs:
       run: sudo apt-get update --fix-missing -y
     - name: install prerequisites
       run: |
-       sudo apt-get install libcups libcupsfilters libppd -y 
+       sudo apt-get install libcups2 libcupsfilters-dev libppd-dev -y 
     - name: configure 
       env:
         CC: /usr/bin/gcc
