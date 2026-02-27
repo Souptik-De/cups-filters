@@ -21,7 +21,27 @@ jobs:
       run: sudo apt-get update --fix-missing -y
     - name: install prerequisites
       run: |
-       sudo apt-get install libcups2 libcupsfilters-dev libppd-dev -y 
+       sudo apt-get install -y
+            libcups2-dev \
+            libcupsfilters-dev \
+            libppd-dev \
+            ghostscript \
+            liblcms2-dev \
+            libpoppler-cpp-dev \
+            libpng-dev \
+            libjpeg-dev \
+            libtiff5-dev \
+            zlib1g-dev \
+            libfontconfig1-dev \
+            libdbus-1-dev \
+            libexif-dev \
+            libavahi-common-dev \
+            libavahi-client-dev \
+            libtool \
+            gettext \
+            autopoint \
+            mupdf-tools
+
     - name: configure 
       env:
         CC: /usr/bin/gcc
